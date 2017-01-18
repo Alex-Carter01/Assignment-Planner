@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="tool-area">
+      {% if username %}
+      {{toolbar}}
+      <br>{{username}}
+      {% else %}
+      {{toolbar2}}
+      {% endif %}
+    </div>
+    <h1 class="main-title">Signup</h1>
+    <form method="post">
+      <table>
+        <tr>
+          <td class="label">Username</td>
+          <td><input type="text" name="username" value="{{username_value}}"></td>
+          <td class="error">{{error_username}}</td>
+        </tr>
+
+        <tr>
+          <td class="label">Password</td>
+          <td><input type="password" name="password" value=""></td>
+          <td class="error">{{error_password}}</td>
+        </tr>
+
+        <tr>
+          <td class="label">Verify Password</td>
+          <td><input type="password" name="verify" value=""></td>
+          <td class="error">{{error_verify}}</td>
+        </tr>
+
+        <tr>
+          <td class="label">Class Period</td>
+          <td><select name="period">
+            <option value="0">Period 0A - Math</option>
+            <option value="2">Period 2A - English</option>
+            <option value="3">Period 3A - PE</option>
+            <option value="5">Period 5B - Science</option><select></td>
+          <td class="error">{{error_class}}</td>
+        </tr>
+
+        <tr>
+          <td class="label">Email (optional)</td>
+          <td><input type="text" name="email" value="{{email_value}}"></td>
+          <td class="error">{{error_email}}</td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+}
+
+.tool-area {
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 7%;
+}
+
+.tool-link {
+    color: gray;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+}
+
+.main-title{
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    height: 50px;
+}
+
+form{
+    position: absolute;
+    left: 20%;
+    top: 120px;
+    width: 300px;
+    height: 200px;
+}
+
+select{
+	width:160px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+label + label {
+    margin-top: 20px;
+}
+
+input[type=submit] {
+  font-size: 18px;
+}
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.content{
+	margin-top:100px;
+}
